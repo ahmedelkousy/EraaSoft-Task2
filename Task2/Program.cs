@@ -142,9 +142,9 @@ namespace Task2
         static void PrintList(List<int> list)
         {
             Console.WriteLine("-------------------------------");
-            foreach (var item in list)
+            for (int i =0; i < list.Count;i++)
             {
-                Console.Write(item + " ");
+                Console.Write(list[i] + " ");
             }
             Console.WriteLine("\n");
             Console.WriteLine("-------------------------------");
@@ -169,9 +169,9 @@ namespace Task2
                 }
             }
             Console.WriteLine("-------------------------------");
-            foreach (var item in list)
+            for (int i = 0; i < list.Count; i++)
             {
-                Console.Write(item + " ");
+                Console.Write(list[i] + " ");
             }
             Console.WriteLine("\n");
             Console.WriteLine("-------------------------------");
@@ -187,10 +187,11 @@ namespace Task2
             Console.WriteLine("the " + num + " has added to the list");
             Console.WriteLine("your list now is:");
             Console.WriteLine("-------------------------------");
-            foreach (var item in list)
+            for (int i = 0; i < list.Count; i++)
             {
-                Console.Write(item + " ");
+                Console.Write(list[i] + " ");
             }
+            Console.WriteLine(" ");
             Console.WriteLine("-------------------------------");
 
         }
